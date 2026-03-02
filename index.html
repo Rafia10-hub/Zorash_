@@ -22,15 +22,27 @@
       <a href="#">Home</a>
       <a href="#products">Products</a>
       <a href="#cart">Cart</a>
+      <a href="our-story.html">Our Company</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
-  <h1>Premium Quality Products</h1>
-  <img src="images/banner.jpg" class="banner-img">
-  <p>Keeping Your Home Clean & Hygienic</p>
-  <button class="btn" onclick="scrollToProducts()">Shop Now</button>
+  <div class="slider">
+
+    <div class="slide active">
+      <img src="images/banner1.jpg" alt="Banner 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/banner2.jpg" alt="Banner 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/banner.jpg" alt="Banner 3">
+    </div>
+
+  </div>
 </section>
 
 <section class="section" id="products">
@@ -356,7 +368,25 @@
   </div>
 
 </footer>
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let current = 0;
 
+  function showSlide(index) {
+    slides.forEach((slide) => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    current++;
+    if (current >= slides.length) {
+      current = 0;
+    }
+    showSlide(current);
+  }
+
+  setInterval(nextSlide, 3000); // 3 seconds
+</script>
 <script src="script.js"></script>
 </body>
 </html>
