@@ -276,7 +276,7 @@
 
     <select id="paymentMethod" onchange="showPaymentDetails()">
       <option value="">Select Payment Method</option>
-      <option value="JazzCash">JazzCash</option>
+      <option value="COD">Cash On Delivery</option>
    </select>
 
    <div id="paymentDetails" style="margin-top:10px;"></div>
@@ -301,14 +301,19 @@
   </div>
 </div>
 
+
 <!-- RECEIPT MODAL -->
 <div id="receiptModal" class="modal">
   <div class="modal-content" id="receiptContent">
     <h2>🧾 Order Receipt</h2>
     <div id="receiptDetails"></div>
+    <img id="receiptPreview" style="width:100%; display:none; margin-top:15px; border-radius:10px;"/>
+    <button class="btn" id="waSendBtn" style="display:none;">Click to Send on WhatsApp</button>
     <button class="btn" onclick="closeReceipt()">Close</button>
   </div>
 </div>
+
+<!-- footer section -->
 <footer class="footer">
 
   <div class="footer-container">
