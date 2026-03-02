@@ -78,47 +78,58 @@ header {
 
 .hero {
   position: relative;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-align: center;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+  
+  background: linear-gradient(to bottom, #fff 0%, #c8e6c9 100%);
+
+  margin-bottom: 0;   /* remove any margin */
+  padding-bottom: 0;
+
 }
 
-.banner-img {
+/* Slider container */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each slide */
+.slide {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  z-index: -2;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
+.slide.active {
+  opacity: 1;
+}
+
+/* Image responsive */
+.slide img {
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(63,92,61,0.7), rgba(0,0,0,0.6));
-  top: 0;
-  left: 0;
-  z-index: -1;
+  object-fit: contain;   /* Laptop full cover */
+  object-position: center;
 }
+@media (max-width: 768px) {
+  .hero {
+    overflow: hidden; /* Prevent any overflow */
+    max-height:300px;
+  }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 15px;
+  .slide img {
+    object-fit: contain;   /* Make image fully visible */
+    object-position: center; /* Center image */
+    width: 100%;           /* Fill container width */
+    height: 100%;          /* Fill container height */
+    display: block;        /* Remove inline gaps */
+  }
 }
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
 /* ================= BUTTON ================= */
 
 .btn {
@@ -188,6 +199,17 @@ header {
 }
 
 /* ================= PRODUCTS GRID ================= */
+#products {
+  background: linear-gradient(
+      rgba(10, 90, 30, 0.4),   /* top color with transparency */
+      rgba(20, 100, 40, 0.6)    /* bottom color with transparency */
+    ),
+    url('images/products-bg.jpg') center/cover no-repeat; /* optional image */
+  
+  padding: 50px 20px;
+  color: #658163; /* make text readable on gradient */
+  border-radius: 10px; /* optional rounded edges */
+}
 
 .products {
   max-width: 1200px;
@@ -544,4 +566,237 @@ header {
 
 #waSendBtn:hover {
   background-color: #1ebe5b;
+}
+
+/* ================= PREMIUM HEADER ================= */
+
+header {
+  background: #ffffff;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.nav-links a {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+  color: var(--c3);
+}
+
+/* ================= HERO UPGRADE ================= */
+
+.hero {
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.hero .btn {
+  font-size: 16px;
+  padding: 14px 35px;
+}
+
+/* ================= CATEGORY BUTTONS PREMIUM ================= */
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cat-btn {
+  width: 160px;
+  height: 140px;
+  border-radius: 18px;
+  transition: all 0.4s ease;
+  border: none;
+  background: #fff;
+}
+
+.cat-btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.cat-btn.active {
+  background: linear-gradient(135deg, var(--c3), var(--c4));
+  color: #fff;
+}
+
+.cat-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+/* ================= PRODUCTS PREMIUM GRID ================= */
+
+.products {
+  gap: 35px;
+}
+
+.product-card {
+  border-radius: 22px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card::before {
+  content: "NEW";
+  position: absolute;
+  top: 15px;
+  left: -40px;
+  background: #ff4d4f;
+  color: #fff;
+  padding: 5px 45px;
+  transform: rotate(-45deg);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.product-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  height: 200px;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.product-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 19px;
+  color: var(--c4);
+}
+
+.product-card .btn {
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ================= CART SECTION PREMIUM ================= */
+
+#cart {
+  background: linear-gradient(135deg, #f9fbf8, #ffffff);
+}
+
+#cartItems {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ================= MODAL PREMIUM ================= */
+
+.modal-content {
+  border-radius: 25px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+.modal-content input,
+.modal-content select {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.modal-content input:focus {
+  border-color: var(--c3);
+  outline: none;
+}
+
+/* ================= RECEIPT PREMIUM ================= */
+
+#receiptContent {
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.notice {
+  font-size: 13px;
+}
+
+/* ================= FOOTER PREMIUM ================= */
+
+.footer {
+  padding: 70px 20px 20px;
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-col a {
+  display: inline-block;
+  margin-bottom: 6px;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  transform: translateX(6px);
+}
+
+/* ================= BUTTON UPGRADE ================= */
+
+.btn {
+  background: linear-gradient(135deg, var(--c3), var(--c4));
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* ================= MOBILE IMPROVEMENT ================= */
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .product-card {
+    height: auto;
+  }
+
+  .categories {
+    gap: 15px;
+  }
+
+  .cat-btn {
+    width: 140px;
+    height: 120px;
+  }
 }
