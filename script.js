@@ -303,37 +303,8 @@ function closeModal() {
   document.getElementById("checkoutModal").style.display = "none";
 }
 
-/* ================= CONFIRM ORDER ================= */
 
-function confirmOrder() {
-
-  let name = document.getElementById("cname").value;
-  let phone = document.getElementById("cphone").value;
-  let address = document.getElementById("caddress").value;
-  let city = document.getElementById("ccity").value;
-  let paymentMethod = document.getElementById("paymentMethod").value;
-
-  if (!name || !phone || !address || !city || !paymentMethod) {
-    alert("Please fill all required fields");
-    return;
-  }
-
-  let orderID = "ZR" + Math.floor(Math.random() * 1000000);
-  let total = DELIVERY_CHARGE;
-  cart.forEach(i => total += i.price);
-
-  generateReceipt(orderID, name, phone, address, city, paymentMethod, total);
-
-  setTimeout(() => {
-    downloadReceiptAndOpenWhatsApp(orderID);
-  }, 800);
-
-  cart = [];
-  renderCart();
-  closeModal();
-}
-
-/* ================= RECEIPT GENERATOR ================= */
+/* ================= RECEIPT GENERATOR + WHATSAPP ================= */
 
 function generateReceipt(orderID, name, phone, address, city, paymentMethod, total) {
 
@@ -367,34 +338,70 @@ function generateReceipt(orderID, name, phone, address, city, paymentMethod, tot
 
   document.getElementById("receiptDetails").innerHTML = receiptHTML;
   document.getElementById("receiptModal").style.display = "flex";
+
+  // Generate PNG preview
+  html2canvas(document.getElementById("receiptContent")).then(canvas => {
+    const img = document.getElementById("receiptPreview");
+    img.src = canvas.toDataURL("image/png");
+    img.style.display = "block";
+
+    // Show WhatsApp button
+    const waBtn = document.getElementById("waSendBtn");
+    waBtn.style.display = "block";
+
+    waBtn.onclick = function() {
+      openWhatsApp(orderID, total, name, phone, address, city, paymentMethod);
+    };
+  });
 }
 
-/* ================= DOWNLOAD + WHATSAPP ================= */
+function openWhatsApp(orderID, total, name, phone, address, city, paymentMethod){
+  let businessNumber = "923212674640";
 
-function downloadReceiptAndOpenWhatsApp(orderID){
+  let message = `Hello Zarosh,
+Order ID: ${orderID}
+Customer: ${name}
+Phone: ${phone}
+Address: ${address}, ${city}
+Payment: ${paymentMethod}
+Total: Rs.${total}
 
-  const receipt = document.getElementById("receiptContent");
+Please attach the receipt screenshot from the preview and send.`;
 
-  html2canvas(receipt).then(canvas => {
-
-    const link = document.createElement("a");
-    link.download = "Zarosh_Receipt_" + orderID + ".png";
-    link.href = canvas.toDataURL();
-    link.click();
-
-    let businessNumber = "923212674640";
-
-    let message = `Hello Zarosh,%0AOrder ID: ${orderID}%0AReceipt attached below.`;
-
-    let url = `https://wa.me/${businessNumber}?text=${message}`;
-
-    window.open(url, "_blank");
-
-  });
+  let url = `https://wa.me/${businessNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
 }
 
 function closeReceipt(){
   document.getElementById("receiptModal").style.display = "none";
+  document.getElementById("receiptPreview").style.display = "none";
+  document.getElementById("waSendBtn").style.display = "none";
+}
+
+/* ================= CONFIRM ORDER UPDATED ================= */
+
+function confirmOrder() {
+
+  let name = document.getElementById("cname").value;
+  let phone = document.getElementById("cphone").value;
+  let address = document.getElementById("caddress").value;
+  let city = document.getElementById("ccity").value;
+  let paymentMethod = document.getElementById("paymentMethod").value;
+
+  if (!name || !phone || !address || !city || !paymentMethod) {
+    alert("Please fill all required fields");
+    return;
+  }
+
+  let orderID = "ZR" + Math.floor(Math.random() * 1000000);
+  let total = DELIVERY_CHARGE;
+  cart.forEach(i => total += i.price);
+
+  generateReceipt(orderID, name, phone, address, city, paymentMethod, total);
+
+  cart = [];
+  renderCart();
+  closeModal();
 }
 
 /* ================= CATEGORY SYSTEM ================= */
