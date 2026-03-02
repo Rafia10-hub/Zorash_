@@ -453,15 +453,95 @@ header {
   text-align: left;
 }
 
+/* Receipt Modal Heading */
 #receiptContent h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 20px; /* Thoda bada mobile par */
 }
 
+/* Notice message */
+.notice {
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Receipt paragraphs */
 #receiptDetails p {
   margin-bottom: 8px;
+  font-size: 14px;
 }
 
+/* Horizontal lines */
 #receiptDetails hr {
   margin: 10px 0;
+}
+
+/* Modal Overlay */
+#receiptModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto; /* scroll agar content lamba ho */
+  padding: 10px;
+}
+
+/* Modal Content */
+#receiptModal .modal-content {
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;  /* Mobile-friendly */
+  padding: 20px;
+  box-sizing: border-box;
+  max-height: 90vh;   /* Screen ke andar scrollable */
+  overflow-y: auto;   /* Scroll agar content exceed ho jaye */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Receipt main content */
+#receiptContent {
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* Receipt image preview */
+#receiptPreview {
+  width: 100%;
+  height: auto;
+  display: none;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* WhatsApp button */
+#waSendBtn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 16px;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#waSendBtn:hover {
+  background-color: #1ebe5b;
 }
