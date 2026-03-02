@@ -229,14 +229,20 @@ Ideal for homes, offices, and commercial spaces, this multi-purpose cleaner keep
     name: "Mr. Kleen Liquid Neel ✨ 75ml",
     img: "images/neel.jpg",
     price: 80,
-    desc: `...`
+    desc: `MR-KLEEN Neel Liquid - 75ml
+The consistent application of blue on the MR-KLEEN Liquid Blue points to unique whiteness.
+Use MR-KLEEN Blue Neel on your deeply washed clothes to make them look even brighter and a small drops of it is enough to make them look really eye catching.
+    MR-KLEEN Liquid is very much easy to use and safe to your hands.`
   },
   {
     id: "neel1",
     name: "Mr. Kleen Liquid Neel ✨ 100ml",
     img: "images/neel1.jpg",
     price: 95,
-    desc: `...`
+    desc: `MR-KLEEN Neel Liquid - 100ml
+The consistent application of blue on the MR-KLEEN Liquid Blue points to unique whiteness.
+Use MR-KLEEN Blue Neel on your deeply washed clothes to make them look even brighter and a small drops of it is enough to make them look really eye catching.
+    MR-KLEEN Liquid is very much easy to use and safe to your hands.`
   },
   // Add more products here...
 ];
