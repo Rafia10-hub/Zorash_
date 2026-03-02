@@ -40,7 +40,7 @@
 
 <div class="categories" id="categoryBox">
   <div class="cat-btn" onclick="filterProducts('cleaning', this)">
-    <img src="./images/kleenlogo.jpg" alt="Cleaning" class="cat-icon">
+    <img src="images/kleenlogo.jpg" alt="Cleaning" class="cat-icon">
     <span>Mr. Kleen</span>
   </div>
   <div class="cat-btn" onclick="filterProducts('beverages', this)">
@@ -306,9 +306,22 @@
 <div id="receiptModal" class="modal">
   <div class="modal-content" id="receiptContent">
     <h2>🧾 Order Receipt</h2>
+
+    <!-- Notice for user -->
+    <div class="notice">
+      Please take a screenshot first, then click on 'Share to WhatsApp'. Thank you!
+    </div>
+
+    <!-- Receipt details -->
     <div id="receiptDetails"></div>
+
+    <!-- Optional preview image (hidden by default) -->
     <img id="receiptPreview" style="width:100%; display:none; margin-top:15px; border-radius:10px;"/>
+
+    <!-- WhatsApp share button -->
     <button class="btn" id="waSendBtn" style="display:none;">Click to Send on WhatsApp</button>
+
+    <!-- Close button -->
     <button class="btn" onclick="closeReceipt()">Close</button>
   </div>
 </div>
