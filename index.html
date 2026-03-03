@@ -12,7 +12,8 @@
 
 <header>
   <div class="navbar">
-    <div class="logo"><img src="images/logo2.jpg" alt="Logo"> </div>
+    <div class="logo"><img src="images/logo.jpg" alt="Logo"> </div>
+    <div class="logo"><img src="images/kleenlogo.jpg" alt="Logo"> </div>
     <div class="menu-toggle" onclick="toggleMenu()">
       <span></span>
       <span></span>
@@ -133,9 +134,9 @@
 
   <div class="product-card cleaning hidden">
     <img src="images/dishWash4.jpg" onclick="openProduct('dishwash4')">
-    <h3>🧽Mr. Kleen 🍋Lemon Dishwashing Liquid ✨ 5L</h3>
-    <p class="price">Rs.100</p>
-    <button class="btn" onclick="addToCart('🧽Mr. Kleen Dish Wash Liquid ✨',100)">Add to Cart</button>
+    <h3>🧽Mr. Kleen 🍋Lemon Dishwashing Liquid ✨ 5 Liter</h3>
+    <p class="price">Rs. coming soon..</p>
+    <button class="btn" onclick="addToCart('🧽Mr. Kleen Dish Wash Liquid ✨',0)">Add to Cart</button>
   </div>
 
   <div class="product-card cleaning hidden">
@@ -149,7 +150,14 @@
     <img src="images/colorbleach.jpg" onclick="openProduct('bleach1')">
     <h3>Mr. Kleen Color Bleach 🧴 600ml</h3>
     <p class="price">Rs. 275</p>
-    <button class="btn" onclick="addToCart('Mr. Kleen Power Bleach 🧴',275)">Add to Cart</button>
+    <button class="btn" onclick="addToCart('Mr. Kleen color Bleach 🧴',275)">Add to Cart</button>
+  </div>
+
+  <div class="product-card cleaning hidden">
+    <img src="images/colorbleach1.jpg" onclick="openProduct('bleach2')">
+    <h3>Mr. Kleen Color Bleach 🧴 5 Liter</h3>
+    <p class="price">Rs. coming soon..</p>
+    <button class="btn" onclick="addToCart('Mr. Kleen color Bleach 🧴',0)">Add to Cart</button>
   </div>
 
   <div class="product-card cleaning hidden">
@@ -191,14 +199,56 @@
     <img src="images/toiletcleaner.jpg" onclick="openProduct('toiletcleaner')">
     <h3>🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴500ml </h3>
     <p class="price">Rs. 350</p>
-    <button class="btn" onclick="addToCart('Mr. Kleen Phenyle✨',350)">Add to Cart</button>
+    <button class="btn" onclick="addToCart('🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴',350)">Add to Cart</button>
+  </div>
+
+  <div class="product-card cleaning hidden">
+    <img src="images/toiletcleaner1.jpg" onclick="openProduct('toiletcleaner1')">
+    <h3>🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴250ml </h3>
+    <p class="price">Rs. 225</p>
+    <button class="btn" onclick="addToCart('🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴✨',225)">Add to Cart</button>
+  </div>
+
+  <div class="product-card cleaning hidden">
+    <img src="images/toiletcleaner2.jpg" onclick="openProduct('toiletcleaner2')">
+    <h3>🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴 5 Liter </h3>
+    <p class="price">Rs. coming soon..</p>
+    <button class="btn" onclick="addToCart('🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴✨',0)">Add to Cart</button>
   </div>
 
   <div class="product-card cleaning hidden">
     <img src="images/multisurface.jpg" onclick="openProduct('multisurface')">
     <h3>Mr. Kleen Multi-Surface Cleaner ✨ 1 Liter</h3>
     <p class="price">Rs. 600</p>
-    <button class="btn" onclick="addToCart('Mr. Kleen Phenyle✨',600)">Add to Cart</button>
+    <button class="btn" onclick="addToCart('Mr. Kleen Multi-Surface Cleaner ✨ 1 Liter',600)">Add to Cart</button>
+  </div>
+
+  <div class="product-card cleaning hidden">
+    <img src="images/multisurface1.jpg" onclick="openProduct('multisurface1')">
+    <h3>Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 1 Liter</h3>
+    <p class="price">Rs. 600</p>
+    <button class="btn" onclick="addToCart('Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 1 Liter',600)">Add to Cart</button>
+  </div>
+
+  <div class="product-card cleaning hidden">
+    <img src="images/multisurface3.jpg" onclick="openProduct('multisurface3')">
+    <h3>Mr. Kleen Multi-Surface Cleaner ✨ 500ml</h3>
+    <p class="price">Rs. 350</p>
+    <button class="btn" onclick="addToCart('Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 500ml',350)">Add to Cart</button>
+  </div>
+
+  <div class="product-card cleaning hidden">
+    <img src="images/multisurface4.jpg" onclick="openProduct('multisurface4')">
+    <h3>Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 500ml</h3>
+    <p class="price">Rs. 350</p>
+    <button class="btn" onclick="addToCart('Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 500ml',350)">Add to Cart</button>
+  </div>
+
+   <div class="product-card cleaning hidden">
+    <img src="images/multisurface2.jpg" onclick="openProduct('multisurface2')">
+    <h3>Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 5 Liter</h3>
+    <p class="price">Rs. coming soon..</p>
+    <button class="btn" onclick="addToCart('Mr. Kleen Multi-Surface Cleaner Anti-bacterial ✨ 5 Liter',0)">Add to Cart</button>
   </div>
 
   <div class="product-card cleaning hidden">
@@ -253,17 +303,26 @@
 
   <!-- Others -->
   <div class="product-card others hidden">
-    <img src="images/shirt.jpg">
-    <h3>Sky Blue Shirt</h3>
-    <p class="price">...</p>
-    <button class="btn" onclick="addToCart('Sky Blue Shirt',600)">Add to Cart</button>
+    <img src="images/toiletcleaner3.jpg" onclick="openProduct('toiletcleaner3')">
+    <h3>Mr. Kleen Toilet Bowl Cleaner ✨ 500ml</h3>
+    <p class="price">coming soon...</p>
+    <button class="btn" onclick="addToCart('Toilet Bowl Cleaner',0)">Add to Cart</button>
   </div>
+
   <div class="product-card others hidden">
-    <img src="images/shirt2.jpg">
-    <h3>Dark Blue Shirt</h3>
-    <p class="price">...</p>
-    <button class="btn" onclick="addToCart('Dark Blue Shirt',600)">Add to Cart</button>
+    <img src="images/zospel.jpg" onclick="openProduct('zospel')">
+    <h3>Zospel ✨ 45ml</h3>
+    <p class="price">coming soon...</p>
+    <button class="btn" onclick="addToCart('Zospel',0)">Add to Cart</button>
   </div>
+
+  <div class="product-card others hidden">
+    <img src="images/hand_sanitizer.jpg" onclick="openProduct('sanitizer')">
+    <h3>Hand Sanitizer ✨ 150ml</h3>
+    <p class="price">coming soon...</p>
+    <button class="btn" onclick="addToCart('Hand Sanitizer',0)">Add to Cart</button>
+  </div>
+
 </div>
 </section>
 
