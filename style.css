@@ -12,10 +12,10 @@ html {
 }
 
 :root {
-  --c1: #C0E2BD;
-  --c2: #EDFFED;
-  --c3: #658163;
-  --c4: #3F5C3D;
+   --c1: #FEF9E1;
+  --c2: #ffffff;
+  --c3: #FD9800;
+  --c4: #FD9800;
 }
 
 body {
@@ -82,7 +82,7 @@ header {
   height: 100%;
   overflow: hidden;
   
-  background: linear-gradient(to bottom, #fff 0%, #c8e6c9 100%);
+  background: #FEF9E1;
 
   margin-bottom: 0;   /* remove any margin */
   padding-bottom: 0;
@@ -147,6 +147,8 @@ header {
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  background: linear-gradient(35deg, var(--c4), var(--c1));
+  color: #FD9800;
 }
 
 /* ================= SECTIONS ================= */
@@ -200,12 +202,8 @@ header {
 
 /* ================= PRODUCTS GRID ================= */
 #products {
-  background: linear-gradient(
-      rgba(10, 90, 30, 0.4),   /* top color with transparency */
-      rgba(20, 100, 40, 0.6)    /* bottom color with transparency */
-    ),
-    url('images/products-bg.jpg') center/cover no-repeat; /* optional image */
-  
+ 
+  background-color: #FEF9E1;
   padding: 50px 20px;
   color: #658163; /* make text readable on gradient */
   border-radius: 10px; /* optional rounded edges */
@@ -286,7 +284,7 @@ header {
 
 .whatsapp {
   margin-left: 15px;
-  color: #25D366;
+  color: #FD9800;
   font-weight: 600;
   text-decoration: none;
 }
