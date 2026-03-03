@@ -105,7 +105,7 @@ Effective Germ Protection: Eliminates up to 99.9% of bacteria and viruses, ensur
     id: "dishwash4",
     name: "🧽Mr. Kleen Dish Wash Liquid ✨ 5L",
     img: "images/dishWash4.jpg",
-    price: 100,
+    price: 0,
     desc: `Product details of 🧽Mr. Kleen Dish Wash Liquid ✨Concentrated Dish Wash Cleaner 🍽️ Kitchen Utensil Cleaner 🧴Mr. Clean Lemon Ultra Liquid 🧴 Dishwasher Liquid 🧼Strong Cleaning Formula 🍋Vitamin E Dish Wash Liquid 🏠Kitchen Cleaning Liquid
 🌟 Product Highlights
 
@@ -134,6 +134,20 @@ Keep your clothes spotless and your home germ-free with Mr. Kleen Power Bleach!
     name: "Mr. Kleen color Bleach 🧴",
     img: "images/colorbleach.jpg",
     price: 275,
+    desc: `Product details of Laundry & Cleaning Products 🧺 Bleach & Disinfectants 🧴 Home & Kitchen Cleaning 🏠 Fabric Care Solutions 👕 Whitening & Hygiene Products 🌟Mr. Clean Power Bleach 🧴 Strong Stain Remover 💪 Germ Kill & Hygiene Cleaner 🦠✨ White Clothes Brightener
+💧 Advanced Whitening Formula – Keeps white clothes bright and fresh after every wash
+🦠 Kills 99.9% of Germs – Ensures hygiene and protection for your family
+👕 Removes Tough Stains – Effective on yellow marks, dirt, and sweat stains
+🧼 Multi-Purpose Use – Ideal for laundry, bathrooms, kitchens, and floor cleaning
+    🧴 Mr. Kleen Power Bleach – Ultimate Whitening & Germ Protection
+Keep your clothes spotless and your home germ-free with Mr. Clean Power Bleach!
+`
+  },
+  {
+    id: "bleach2",
+    name: "Mr. Kleen color Bleach 🧴",
+    img: "images/colorbleach1.jpg",
+    price: 0,
     desc: `Product details of Laundry & Cleaning Products 🧺 Bleach & Disinfectants 🧴 Home & Kitchen Cleaning 🏠 Fabric Care Solutions 👕 Whitening & Hygiene Products 🌟Mr. Clean Power Bleach 🧴 Strong Stain Remover 💪 Germ Kill & Hygiene Cleaner 🦠✨ White Clothes Brightener
 💧 Advanced Whitening Formula – Keeps white clothes bright and fresh after every wash
 🦠 Kills 99.9% of Germs – Ensures hygiene and protection for your family
@@ -216,13 +230,85 @@ Available in 250ml & 500ml sizes, this cleaner ensures long-lasting freshness wi
 Specifications of 🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴 Bathroom Cleaning Liquid 🧼 Deep Clean Formula`
   },
   {
+    id: "toiletcleaner1",
+    name: "🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴250ml ",
+    img: "images/toiletcleaner1.jpg",
+    price: 225,
+    desc: `Mr. Kleen Power Plus Toilet Bowl Cleaner
+
+Keep your toilet hygienically clean and fresh with Mr. Clean Power Plus Toilet Bowl Cleaner.
+Its powerful germ-killing formula removes tough stains, lime scale, and odor-causing bacteria — leaving your toilet bowl spotless and shining.
+The angled nozzle design makes it easy to apply under the rim for deep cleaning.
+Available in 250ml & 500ml sizes, this cleaner ensures long-lasting freshness with a pleasant French fragrance.
+Specifications of 🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴 Bathroom Cleaning Liquid 🧼 Deep Clean Formula`
+  },
+  {
+    id: "toiletcleaner2",
+    name: "🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴 5 Litre ",
+    img: "images/toiletcleaner2.jpg",
+    price: 0,
+    desc: `Mr. Kleen Power Plus Toilet Bowl Cleaner
+
+Keep your toilet hygienically clean and fresh with Mr. Clean Power Plus Toilet Bowl Cleaner.
+Its powerful germ-killing formula removes tough stains, lime scale, and odor-causing bacteria — leaving your toilet bowl spotless and shining.
+The angled nozzle design makes it easy to apply under the rim for deep cleaning.
+Available in 250ml & 500ml sizes, this cleaner ensures long-lasting freshness with a pleasant French fragrance.
+Specifications of 🚽 Toilet Cleaner ✨ Mr. Kleen Power Plus 🧴 Bathroom Cleaning Liquid 🧼 Deep Clean Formula`
+  },
+  {
     id: "multisurface",
     name: "Mr. Kleen Multi-Surface Cleaner ✨ 1 Liter",
     img: "images/multisurface.jpg",
     price: 600,
+    desc: `Mr.Kleen Multi Surface Cleaner – 1 Litre
+Experience a superior level of cleanliness with Mr. Clean Anti-Bacterial Multi Surface Cleaner (1 Litre) — a professional-grade formula designed to deliver deep cleaning and powerful disinfection. Engineered to eliminate 99.99% of germs, it removes dirt, grease, and stubborn stains from multiple surfaces with ease.
+Ideal for homes, offices, and commercial spaces, this multi-purpose cleaner keeps your environment fresh, hygienic, and spotless. Its fast-acting antibacterial formula ensures long-lasting freshness while being safe and effective for everyday use.`
+  },
+  {
+    id: "multisurface1",
+    name: "Mr. Kleen Multi-Surface Cleaner Anti-Bacterial ✨ 1 Liter",
+    img: "images/multisurface1.jpg",
+    price: 600,
     desc: `Mr.Kleen Anti-Bacterial Multi Surface Cleaner – 1 Litre
 Experience a superior level of cleanliness with Mr. Clean Anti-Bacterial Multi Surface Cleaner (1 Litre) — a professional-grade formula designed to deliver deep cleaning and powerful disinfection. Engineered to eliminate 99.99% of germs, it removes dirt, grease, and stubborn stains from multiple surfaces with ease.
 Ideal for homes, offices, and commercial spaces, this multi-purpose cleaner keeps your environment fresh, hygienic, and spotless. Its fast-acting antibacterial formula ensures long-lasting freshness while being safe and effective for everyday use.`
+  },
+  {
+    id: "multisurface3",
+    name: "Mr. Kleen Multi-Surface Cleaner Anti-Bacterial ✨ 500ml",
+    img: "images/multisurface3.jpg",
+    price: 350,
+    desc: `Mr.Kleen Anti-Bacterial Multi Surface Cleaner – 500ml
+Experience a superior level of cleanliness with Mr. Clean Anti-Bacterial Multi Surface Cleaner (1 Litre) — a professional-grade formula designed to deliver deep cleaning and powerful disinfection. Engineered to eliminate 99.99% of germs, it removes dirt, grease, and stubborn stains from multiple surfaces with ease.
+Ideal for homes, offices, and commercial spaces, this multi-purpose cleaner keeps your environment fresh, hygienic, and spotless. Its fast-acting antibacterial formula ensures long-lasting freshness while being safe and effective for everyday use.`
+  },
+  {
+    id: "multisurface4",
+    name: "Mr. Kleen Multi-Surface Cleaner Anti-Bacterial ✨ 500ml",
+    img: "images/multisurface4.jpg",
+    price: 350,
+    desc: `Mr.Kleen  Multi Surface Cleaner – 500ml
+Experience a superior level of cleanliness with Mr. Clean Anti-Bacterial Multi Surface Cleaner (1 Litre) — a professional-grade formula designed to deliver deep cleaning and powerful disinfection. Engineered to eliminate 99.99% of germs, it removes dirt, grease, and stubborn stains from multiple surfaces with ease.
+Ideal for homes, offices, and commercial spaces, this multi-purpose cleaner keeps your environment fresh, hygienic, and spotless. Its fast-acting antibacterial formula ensures long-lasting freshness while being safe and effective for everyday use.`
+  },
+  {
+    id: "multisurface2",
+    name: "Mr. Kleen Multi-Surface Cleaner ✨ 5 Liter",
+    img: "images/multisurface2.jpg",
+    price: 0,
+    desc: `Mr.Kleen Anti-Bacterial Multi Surface Cleaner – 5 Litre
+Experience a superior level of cleanliness with Mr. Clean Anti-Bacterial Multi Surface Cleaner (1 Litre) — a professional-grade formula designed to deliver deep cleaning and powerful disinfection. Engineered to eliminate 99.99% of germs, it removes dirt, grease, and stubborn stains from multiple surfaces with ease.
+Ideal for homes, offices, and commercial spaces, this multi-purpose cleaner keeps your environment fresh, hygienic, and spotless. Its fast-acting antibacterial formula ensures long-lasting freshness while being safe and effective for everyday use.`
+  },
+  {
+    id: "neel",
+    name: "Mr. Kleen Liquid Neel ✨ 75ml",
+    img: "images/neel.jpg",
+    price: 80,
+    desc: `MR-KLEEN Neel Liquid - 75ml
+The consistent application of blue on the MR-KLEEN Liquid Blue points to unique whiteness.
+Use MR-KLEEN Blue Neel on your deeply washed clothes to make them look even brighter and a small drops of it is enough to make them look really eye catching.
+    MR-KLEEN Liquid is very much easy to use and safe to your hands.`
   },
   {
     id: "neel",
@@ -243,6 +329,20 @@ Use MR-KLEEN Blue Neel on your deeply washed clothes to make them look even brig
 The consistent application of blue on the MR-KLEEN Liquid Blue points to unique whiteness.
 Use MR-KLEEN Blue Neel on your deeply washed clothes to make them look even brighter and a small drops of it is enough to make them look really eye catching.
     MR-KLEEN Liquid is very much easy to use and safe to your hands.`
+  },
+  {
+    id: "toiletcleaner3",
+    name: "Mr. Kleen Toilet Bowl Cleaner ✨ 500ml",
+    img: "images/toiletcleaner3.jpg",
+    price: 0,
+    desc: `coming soon..`
+  },
+  {
+    id: "zospel",
+    name: "Zospel ✨ 45ml",
+    img: "images/zospel.jpg",
+    price: 0,
+    desc: `coming soon..`
   },
   // Add more products here...
 ];
